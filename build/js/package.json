@@ -1,0 +1,17 @@
+{
+  "name": "dermai",
+  "version": "1.0-SNAPSHOT",
+  "private": true,
+  "workspaces": [
+    "packages/dermai",
+    "packages/dermai-test",
+    "packages_imported/kotlin-wrappers-kotlin-react-js-ir/1.0.0-SNAPSHOT",
+    "packages_imported/kotlin-wrappers-kotlin-react-dom-js-ir/1.0.0-SNAPSHOT"
+  ],
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "resolutions": {}
+}

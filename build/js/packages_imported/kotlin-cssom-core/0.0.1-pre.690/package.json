@@ -1,0 +1,13 @@
+{
+  "name": "kotlin-cssom-core",
+  "version": "0.0.1-pre.690",
+  "main": "kotlin-cssom-core.js",
+  "types": "kotlin-cssom-core.d.ts",
+  "devDependencies": {},
+  "dependencies": {
+    "format-util": "^1.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

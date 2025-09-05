@@ -1,0 +1,13 @@
+{
+  "name": "kotlin-wrappers-kotlin-react-js-ir",
+  "version": "1.0.0-SNAPSHOT",
+  "main": "kotlin-wrappers-kotlin-react-js-ir.js",
+  "types": "kotlin-wrappers-kotlin-react-js-ir.d.ts",
+  "devDependencies": {},
+  "dependencies": {
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}
