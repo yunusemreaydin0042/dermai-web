@@ -161,7 +161,7 @@ fun main() {
             .date-time-container { position: static; text-align: left; margin-bottom: 10px; }
         }
         .dermai-color{
-           background: linear-gradient(45deg, #4CAF50, #2196F3, #9C27B0);
+           background: linear-gradient(to left, #4CAF50, #2196F3, #9C27B0);
         }
     </style>
     <div id="page-wrapper">
