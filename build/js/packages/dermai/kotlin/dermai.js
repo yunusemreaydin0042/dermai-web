@@ -35,53 +35,48 @@
   var getDocs = $module$firebase_firestore_1yi9rr.getDocs;
   var signInWithEmailAndPassword = $module$firebase_auth_2je36k.signInWithEmailAndPassword;
   var getDoc = $module$firebase_firestore_1yi9rr.getDoc;
-  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.b1;
-  var charArrayOf = kotlin_kotlin.$_$.o3;
-  var split = kotlin_kotlin.$_$.u4;
-  var copyToArray = kotlin_kotlin.$_$.x1;
-  var startsWith = kotlin_kotlin.$_$.w4;
-  var substring = kotlin_kotlin.$_$.x4;
-  var indexOf = kotlin_kotlin.$_$.r4;
-  var ensureNotNull = kotlin_kotlin.$_$.o5;
-  var to = kotlin_kotlin.$_$.t5;
-  var json = kotlin_kotlin.$_$.f4;
-  var THROW_CCE = kotlin_kotlin.$_$.j5;
+  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.s;
+  var charArrayOf = kotlin_kotlin.$_$.f2;
+  var split = kotlin_kotlin.$_$.w2;
+  var copyToArray = kotlin_kotlin.$_$.e1;
+  var startsWith = kotlin_kotlin.$_$.y2;
+  var substring = kotlin_kotlin.$_$.z2;
+  var indexOf = kotlin_kotlin.$_$.u2;
+  var Unit_instance = kotlin_kotlin.$_$.z;
+  var ensureNotNull = kotlin_kotlin.$_$.k3;
+  var to = kotlin_kotlin.$_$.o3;
+  var json = kotlin_kotlin.$_$.q2;
+  var THROW_CCE = kotlin_kotlin.$_$.g3;
   var MainScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
   var VOID = kotlin_kotlin.$_$.b;
   var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.d;
-  var Unit_getInstance = kotlin_kotlin.$_$.k1;
-  var CoroutineImpl = kotlin_kotlin.$_$.h3;
-  var protoOf = kotlin_kotlin.$_$.i4;
+  var CoroutineImpl = kotlin_kotlin.$_$.a2;
+  var protoOf = kotlin_kotlin.$_$.r2;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
-  var isInterface = kotlin_kotlin.$_$.d4;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.p2;
-  var initMetadataForLambda = kotlin_kotlin.$_$.a4;
-  var toDouble = kotlin_kotlin.$_$.y4;
-  var round = kotlin_kotlin.$_$.l4;
-  var isBlank = kotlin_kotlin.$_$.s4;
+  var isInterface = kotlin_kotlin.$_$.p2;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.l1;
+  var initMetadataForLambda = kotlin_kotlin.$_$.m2;
+  var toDouble = kotlin_kotlin.$_$.a3;
+  var round = kotlin_kotlin.$_$.t2;
+  var isBlank = kotlin_kotlin.$_$.v2;
   var await_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.a;
-  var isArray = kotlin_kotlin.$_$.c4;
-  var arrayIterator = kotlin_kotlin.$_$.m3;
-  var checkIndexOverflow = kotlin_kotlin.$_$.v1;
-  var split_0 = kotlin_kotlin.$_$.v4;
-  var joinToString = kotlin_kotlin.$_$.d2;
-  var emptyList = kotlin_kotlin.$_$.y1;
-  var getOrNull = kotlin_kotlin.$_$.b2;
+  var isArray = kotlin_kotlin.$_$.o2;
+  var arrayIterator = kotlin_kotlin.$_$.d2;
+  var checkIndexOverflow = kotlin_kotlin.$_$.d1;
+  var split_0 = kotlin_kotlin.$_$.x2;
+  var joinToString = kotlin_kotlin.$_$.h1;
+  var emptyList = kotlin_kotlin.$_$.f1;
+  var getOrNull = kotlin_kotlin.$_$.g1;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.d;
-  var listOf = kotlin_kotlin.$_$.e2;
-  var initMetadataForCoroutine = kotlin_kotlin.$_$.y3;
-  var SuspendFunction1 = kotlin_kotlin.$_$.i3;
+  var listOf = kotlin_kotlin.$_$.i1;
+  var initMetadataForCoroutine = kotlin_kotlin.$_$.k2;
   //endregion
   //region block: pre-declaration
-  initMetadataForLambda(main$slambda, CoroutineImpl, [CoroutineImpl], [1]);
-  initMetadataForLambda(main$renderDashboard$slambda, CoroutineImpl, [CoroutineImpl], [1]);
-  initMetadataForLambda(main$renderLogin$lambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
+  initMetadataForLambda(main$slambda, CoroutineImpl, VOID, [1]);
+  initMetadataForLambda(main$renderDashboard$slambda, CoroutineImpl, VOID, [1]);
+  initMetadataForLambda(main$renderLogin$lambda$slambda, CoroutineImpl, VOID, [1]);
   initMetadataForCoroutine($getUserDataCOROUTINE$, CoroutineImpl);
   //endregion
-  function get_USER_AUTH_COOKIE() {
-    return USER_AUTH_COOKIE;
-  }
-  var USER_AUTH_COOKIE;
   function getCookie(name) {
     var nameEQ = name + '=';
     // Inline function 'kotlin.collections.toTypedArray' call
@@ -142,9 +137,9 @@
   }
   function getUserData(db, userUid, $completion) {
     var tmp = new $getUserDataCOROUTINE$(db, userUid, $completion);
-    tmp.set_result_xj64lm_k$(Unit_getInstance());
-    tmp.set_exception_px07aa_k$(null);
-    return tmp.doResume_5yljmg_k$();
+    tmp.i4_1 = Unit_instance;
+    tmp.j4_1 = null;
+    return tmp.o4();
   }
   function main$renderDashboard(loginContainer, dashboardContainer, dashboardHTML, navLinks, auth, db) {
     loginContainer.innerHTML = '';
@@ -180,99 +175,96 @@
     loginForm.addEventListener('submit', main$renderLogin$lambda(emailInput, passwordInput, auth, errorMessage, loginContainer, dashboardContainer, dashboardHTML, navLinks, db));
   }
   function main$slambda($db, $loginContainer, $dashboardContainer, $dashboardHTML, $navLinks, $auth, $loginHTML, resultContinuation) {
-    this.$db_1 = $db;
-    this.$loginContainer_1 = $loginContainer;
-    this.$dashboardContainer_1 = $dashboardContainer;
-    this.$dashboardHTML_1 = $dashboardHTML;
-    this.$navLinks_1 = $navLinks;
-    this.$auth_1 = $auth;
-    this.$loginHTML_1 = $loginHTML;
+    this.tj_1 = $db;
+    this.uj_1 = $loginContainer;
+    this.vj_1 = $dashboardContainer;
+    this.wj_1 = $dashboardHTML;
+    this.xj_1 = $navLinks;
+    this.yj_1 = $auth;
+    this.zj_1 = $loginHTML;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(main$slambda).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
-    var tmp = this.create_rcuf4x_k$($this$launch, $completion);
-    tmp.set_result_xj64lm_k$(Unit_getInstance());
-    tmp.set_exception_px07aa_k$(null);
-    return tmp.doResume_5yljmg_k$();
+  protoOf(main$slambda).ck = function ($this$launch, $completion) {
+    var tmp = this.dk($this$launch, $completion);
+    tmp.i4_1 = Unit_instance;
+    tmp.j4_1 = null;
+    return tmp.o4();
   };
-  protoOf(main$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
-    return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+  protoOf(main$slambda).y4 = function (p1, $completion) {
+    return this.ck((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
-  protoOf(main$slambda).doResume_5yljmg_k$ = function () {
-    var suspendResult = this.get_result_iyg5d2_k$();
+  protoOf(main$slambda).o4 = function () {
+    var suspendResult = this.i4_1;
     $sm: do
       try {
-        var tmp = this.get_state_iypx7s_k$();
+        var tmp = this.g4_1;
         switch (tmp) {
           case 0:
-            this.set_exceptionState_fex74n_k$(5);
-            this.userUid0__1 = getCookie('userAuth');
-            if (!(this.userUid0__1 == null)) {
-              this.set_exceptionState_fex74n_k$(2);
-              this.set_state_rjd8d0_k$(1);
-              suspendResult = getUserData(this.$db_1, this.userUid0__1, this);
+            this.h4_1 = 5;
+            this.bk_1 = getCookie('userAuth');
+            if (!(this.bk_1 == null)) {
+              this.h4_1 = 2;
+              this.g4_1 = 1;
+              suspendResult = getUserData(this.tj_1, this.bk_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              main$renderLogin(this.$loginContainer_1, this.$loginHTML_1, this.$dashboardContainer_1, this.$navLinks_1, this.$auth_1, this.$dashboardHTML_1, this.$db_1);
-              this.set_state_rjd8d0_k$(4);
+              main$renderLogin(this.uj_1, this.zj_1, this.vj_1, this.xj_1, this.yj_1, this.wj_1, this.tj_1);
+              this.g4_1 = 4;
               continue $sm;
             }
 
           case 1:
             var userData = suspendResult;
             if (userData.usertype === 'derm') {
-              main$renderDashboard(this.$loginContainer_1, this.$dashboardContainer_1, this.$dashboardHTML_1, this.$navLinks_1, this.$auth_1, this.$db_1);
+              main$renderDashboard(this.uj_1, this.vj_1, this.wj_1, this.xj_1, this.yj_1, this.tj_1);
             } else {
               deleteCookie('userAuth');
-              main$renderLogin(this.$loginContainer_1, this.$loginHTML_1, this.$dashboardContainer_1, this.$navLinks_1, this.$auth_1, this.$dashboardHTML_1, this.$db_1);
+              main$renderLogin(this.uj_1, this.zj_1, this.vj_1, this.xj_1, this.yj_1, this.wj_1, this.tj_1);
             }
 
-            this.set_exceptionState_fex74n_k$(5);
-            this.set_state_rjd8d0_k$(3);
+            this.h4_1 = 5;
+            this.g4_1 = 3;
             continue $sm;
           case 2:
-            this.set_exceptionState_fex74n_k$(5);
-            var e = this.get_exception_x0n6w6_k$();
+            this.h4_1 = 5;
+            var e = this.j4_1;
             console.error('Oturum do\u011Frulama hatas\u0131:', e);
             deleteCookie('userAuth');
-            main$renderLogin(this.$loginContainer_1, this.$loginHTML_1, this.$dashboardContainer_1, this.$navLinks_1, this.$auth_1, this.$dashboardHTML_1, this.$db_1);
-            this.set_state_rjd8d0_k$(3);
+            main$renderLogin(this.uj_1, this.zj_1, this.vj_1, this.xj_1, this.yj_1, this.wj_1, this.tj_1);
+            this.g4_1 = 3;
             continue $sm;
           case 3:
-            this.set_exceptionState_fex74n_k$(5);
-            this.set_state_rjd8d0_k$(4);
+            this.h4_1 = 5;
+            this.g4_1 = 4;
             continue $sm;
           case 4:
-            return Unit_getInstance();
+            return Unit_instance;
           case 5:
-            throw this.get_exception_x0n6w6_k$();
+            throw this.j4_1;
         }
       } catch ($p) {
         var e_0 = $p;
-        if (this.get_exceptionState_wflpxn_k$() === 5) {
+        if (this.h4_1 === 5) {
           throw e_0;
         } else {
-          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
-          this.set_exception_px07aa_k$(e_0);
+          this.g4_1 = this.h4_1;
+          this.j4_1 = e_0;
         }
       }
      while (true);
   };
-  protoOf(main$slambda).create_rcuf4x_k$ = function ($this$launch, completion) {
-    var i = new main$slambda(this.$db_1, this.$loginContainer_1, this.$dashboardContainer_1, this.$dashboardHTML_1, this.$navLinks_1, this.$auth_1, this.$loginHTML_1, completion);
-    i.$this$launch_1 = $this$launch;
+  protoOf(main$slambda).dk = function ($this$launch, completion) {
+    var i = new main$slambda(this.tj_1, this.uj_1, this.vj_1, this.wj_1, this.xj_1, this.yj_1, this.zj_1, completion);
+    i.ak_1 = $this$launch;
     return i;
-  };
-  protoOf(main$slambda).create_wyq9v6_k$ = function (value, completion) {
-    return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
   };
   function main$slambda_0($db, $loginContainer, $dashboardContainer, $dashboardHTML, $navLinks, $auth, $loginHTML, resultContinuation) {
     var i = new main$slambda($db, $loginContainer, $dashboardContainer, $dashboardHTML, $navLinks, $auth, $loginHTML, resultContinuation);
     var l = function ($this$launch, $completion) {
-      return i.invoke_d9fzmj_k$($this$launch, $completion);
+      return i.ck($this$launch, $completion);
     };
     l.$arity = 1;
     return l;
@@ -288,12 +280,12 @@
       window.alert('Hastal\u0131k onayland\u0131 \u2705');
       $confirmBtn.textContent = 'Onayland\u0131';
       $confirmBtn.setAttribute('disabled', 'true');
-      return Unit_getInstance();
+      return Unit_instance;
     };
   }
   function main$renderDashboard$slambda$lambda$lambda_0(err) {
     console.error('Onaylama hatas\u0131:', err);
-    return Unit_getInstance();
+    return Unit_instance;
   }
   function main$renderDashboard$slambda$lambda_1($db, $userUid, $confirmBtn) {
     return function (_unused_var__etf5q3) {
@@ -301,7 +293,7 @@
       var promise = updateDoc(diseaseRef, json([to('isConfirmed', true)]));
       var tmp = promise.then(main$renderDashboard$slambda$lambda$lambda($confirmBtn));
       tmp.catch(main$renderDashboard$slambda$lambda$lambda_0);
-      return Unit_getInstance();
+      return Unit_instance;
     };
   }
   function main$renderDashboard$slambda$lambda$lambda$lambda($input, $modal) {
@@ -313,7 +305,7 @@
   }
   function main$renderDashboard$slambda$lambda$lambda$lambda_0(err) {
     console.error('Yorum ekleme hatas\u0131:', err);
-    return Unit_getInstance();
+    return Unit_instance;
   }
   function main$renderDashboard$slambda$lambda$lambda_1($modalId, $db, $userUid, $modal) {
     return function (_unused_var__etf5q3) {
@@ -327,9 +319,9 @@
         var commentPromise = updateDoc(diseaseRef, json([to('comments', arrayUnion(comment))]));
         var tmp_1 = commentPromise.then(main$renderDashboard$slambda$lambda$lambda$lambda(input, $modal));
         tmp_1.catch(main$renderDashboard$slambda$lambda$lambda$lambda_0);
-        tmp_0 = Unit_getInstance();
+        tmp_0 = Unit_instance;
       }
-      return Unit_getInstance();
+      return Unit_instance;
     };
   }
   function main$renderDashboard$slambda$lambda_2($modalId, $db, $userUid) {
@@ -345,94 +337,94 @@
       var this_0 = {};
       this_0.once = true;
       saveBtn.addEventListener('click', tmp, this_0);
-      return Unit_getInstance();
+      return Unit_instance;
     };
   }
   function main$renderDashboard$slambda($auth, $db, $dermNameH5, $userListDiv, resultContinuation) {
-    this.$auth_1 = $auth;
-    this.$db_1 = $db;
-    this.$dermNameH5__1 = $dermNameH5;
-    this.$userListDiv_1 = $userListDiv;
+    this.mk_1 = $auth;
+    this.nk_1 = $db;
+    this.ok_1 = $dermNameH5;
+    this.pk_1 = $userListDiv;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(main$renderDashboard$slambda).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
-    var tmp = this.create_rcuf4x_k$($this$launch, $completion);
-    tmp.set_result_xj64lm_k$(Unit_getInstance());
-    tmp.set_exception_px07aa_k$(null);
-    return tmp.doResume_5yljmg_k$();
+  protoOf(main$renderDashboard$slambda).ck = function ($this$launch, $completion) {
+    var tmp = this.dk($this$launch, $completion);
+    tmp.i4_1 = Unit_instance;
+    tmp.j4_1 = null;
+    return tmp.o4();
   };
-  protoOf(main$renderDashboard$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
-    return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+  protoOf(main$renderDashboard$slambda).y4 = function (p1, $completion) {
+    return this.ck((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
-  protoOf(main$renderDashboard$slambda).doResume_5yljmg_k$ = function () {
-    var suspendResult = this.get_result_iyg5d2_k$();
+  protoOf(main$renderDashboard$slambda).o4 = function () {
+    var suspendResult = this.i4_1;
     $sm: do
       try {
-        var tmp = this.get_state_iypx7s_k$();
+        var tmp = this.g4_1;
         switch (tmp) {
           case 0:
-            this.set_exceptionState_fex74n_k$(12);
+            this.h4_1 = 12;
             var tmp_0 = this;
-            var tmp0_safe_receiver = this.$auth_1.currentUser;
-            tmp_0.userUid0__1 = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.uid;
-            if (this.userUid0__1 != null) {
-              this.set_state_rjd8d0_k$(1);
-              suspendResult = getUserData(this.$db_1, this.userUid0__1, this);
+            var tmp0_safe_receiver = this.mk_1.currentUser;
+            tmp_0.rk_1 = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.uid;
+            if (this.rk_1 != null) {
+              this.g4_1 = 1;
+              suspendResult = getUserData(this.nk_1, this.rk_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.$dermNameH5__1.textContent = 'Kullan\u0131c\u0131 Bulunamad\u0131';
-              this.set_state_rjd8d0_k$(2);
+              this.ok_1.textContent = 'Kullan\u0131c\u0131 Bulunamad\u0131';
+              this.g4_1 = 2;
               continue $sm;
             }
 
           case 1:
-            this.loggedInUser1__1 = suspendResult;
-            this.$dermNameH5__1.textContent = this.loggedInUser1__1.usertype === 'derm' ? this.loggedInUser1__1.name + ' ' + this.loggedInUser1__1.surname : 'Kullan\u0131c\u0131 Tipi: ' + this.loggedInUser1__1.usertype;
-            this.set_state_rjd8d0_k$(2);
+            this.sk_1 = suspendResult;
+            this.ok_1.textContent = this.sk_1.usertype === 'derm' ? this.sk_1.name + ' ' + this.sk_1.surname : 'Kullan\u0131c\u0131 Tipi: ' + this.sk_1.usertype;
+            this.g4_1 = 2;
             continue $sm;
           case 2:
-            this.set_exceptionState_fex74n_k$(10);
-            this.$userListDiv_1.innerHTML = '';
-            this.usersCol2__1 = collection(this.$db_1, 'users');
-            this.set_state_rjd8d0_k$(3);
-            suspendResult = await_0(getDocs(this.usersCol2__1), this);
+            this.h4_1 = 10;
+            this.pk_1.innerHTML = '';
+            this.tk_1 = collection(this.nk_1, 'users');
+            this.g4_1 = 3;
+            suspendResult = await_0(getDocs(this.tk_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 3:
-            this.usersSnap3__1 = suspendResult;
+            this.uk_1 = suspendResult;
             var tmp_1 = this;
-            var tmp_2 = this.usersSnap3__1.docs;
-            tmp_1.userDocs4__1 = (!(tmp_2 == null) ? isArray(tmp_2) : false) ? tmp_2 : THROW_CCE();
+            var tmp_2 = this.uk_1.docs;
+            tmp_1.vk_1 = (!(tmp_2 == null) ? isArray(tmp_2) : false) ? tmp_2 : THROW_CCE();
             var tmp_3 = this;
-            tmp_3.tmp05__1 = this.userDocs4__1;
-            this.this6__1 = this.tmp05__1;
-            this._iterator_7_yqohr7__1 = arrayIterator(this.this6__1);
-            this.set_state_rjd8d0_k$(4);
+            tmp_3.wk_1 = this.vk_1;
+            this.xk_1 = this.wk_1;
+            this.yk_1 = arrayIterator(this.xk_1);
+            this.g4_1 = 4;
             continue $sm;
           case 4:
-            if (!this._iterator_7_yqohr7__1.hasNext_bitz1p_k$()) {
-              this.set_state_rjd8d0_k$(9);
+            if (!this.yk_1.f()) {
+              this.g4_1 = 9;
               continue $sm;
             }
 
-            this.element8__1 = this._iterator_7_yqohr7__1.next_20eer_k$();
+            this.zk_1 = this.yk_1.g();
             var tmp_4 = this;
-            tmp_4.tmp09__1 = this.element8__1;
-            this.set_state_rjd8d0_k$(5);
+            tmp_4.al_1 = this.zk_1;
+            this.g4_1 = 5;
             continue $sm;
           case 5:
-            this.doc11__1 = this.tmp09__1;
+            this.cl_1 = this.al_1;
             var tmp_5 = this;
-            var tmp_6 = this.doc11__1.id;
-            tmp_5.userUid12__1 = (!(tmp_6 == null) ? typeof tmp_6 === 'string' : false) ? tmp_6 : THROW_CCE();
-            this.set_state_rjd8d0_k$(6);
-            suspendResult = getUserData(this.$db_1, this.userUid12__1, this);
+            var tmp_6 = this.cl_1.id;
+            tmp_5.dl_1 = (!(tmp_6 == null) ? typeof tmp_6 === 'string' : false) ? tmp_6 : THROW_CCE();
+            this.g4_1 = 6;
+            suspendResult = getUserData(this.nk_1, this.dl_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -440,12 +432,12 @@
             continue $sm;
           case 6:
             var user = suspendResult;
-            if (user.diseases.isEmpty_y1axqb_k$() || user.usertype === 'derm') {
-              this.tmp$ret$010__1 = Unit_getInstance();
-              this.set_state_rjd8d0_k$(8);
+            if (user.diseases.m() || user.usertype === 'derm') {
+              this.bl_1 = Unit_instance;
+              this.g4_1 = 8;
               continue $sm;
             } else {
-              this.set_state_rjd8d0_k$(7);
+              this.g4_1 = 7;
               continue $sm;
             }
 
@@ -455,22 +447,22 @@
             var cardBody = document.createElement('div');
             cardBody.setAttribute('class', 'card-body');
             var index = 0;
-            var _iterator__ex2g4s = user.diseases.iterator_jk1svi_k$();
-            while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
-              var item = _iterator__ex2g4s.next_20eer_k$();
+            var _iterator__ex2g4s = user.diseases.e();
+            while (_iterator__ex2g4s.f()) {
+              var item = _iterator__ex2g4s.g();
               var _unary__edvuaz = index;
               index = _unary__edvuaz + 1 | 0;
               var index_0 = checkIndexOverflow(_unary__edvuaz);
               var dateTimeParts = split_0(item.date, [' ']);
               var date = new Date(item.date);
               var tmp_7;
-              if (!dateTimeParts.isEmpty_y1axqb_k$()) {
+              if (!dateTimeParts.m()) {
                 tmp_7 = '' + date.getDay() + '/' + date.getMonth() + '/' + date.getFullYear();
               } else {
                 tmp_7 = '';
               }
               var datePart = tmp_7;
-              var timePart = dateTimeParts.get_size_woubt6_k$() > 1 ? '' + date.getHours() + ':' + date.getMinutes() : '';
+              var timePart = dateTimeParts.h() > 1 ? '' + date.getHours() + ':' + date.getMinutes() : '';
               var dateTimeContainer = document.createElement('div');
               dateTimeContainer.setAttribute('class', 'date-time-container');
               var dateText = document.createElement('p');
@@ -540,13 +532,13 @@
               if (item.isConfirmed) {
                 confirmBtn.setAttribute('disabled', 'true');
               }
-              confirmBtn.addEventListener('click', main$renderDashboard$slambda$lambda_1(this.$db_1, this.userUid12__1, confirmBtn));
+              confirmBtn.addEventListener('click', main$renderDashboard$slambda$lambda_1(this.nk_1, this.dl_1, confirmBtn));
               var commentBtn = document.createElement('button');
               commentBtn.setAttribute('class', 'btn dermai-color btn-sm');
               commentBtn.textContent = 'Yorum Ekle';
-              var modalId = 'commentModal-' + this.userUid12__1 + '-' + index_0;
+              var modalId = 'commentModal-' + this.dl_1 + '-' + index_0;
               ensureNotNull(document.body).insertAdjacentHTML('beforeend', '\n                            <div class="modal fade" id="' + modalId + '" tabindex="-1" aria-labelledby="' + modalId + 'Label" aria-hidden="true">\n                              <div class="modal-dialog">\n                                <div class="modal-content">\n                                  <div class="modal-header">\n                                    <h5 class="modal-title" id="' + modalId + 'Label">Yorum Yaz<\/h5>\n                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"><\/button>\n                                  <\/div>\n                                  <div class="modal-body">\n                                    <textarea class="form-control" id="commentInput-' + modalId + '" rows="3" placeholder="Yorumunuzu yaz\u0131n..."><\/textarea>\n                                  <\/div>\n                                  <div class="modal-footer">\n                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">\u0130ptal<\/button>\n                                    <button type="button" class="btn dermai-color" id="saveCommentBtn-' + modalId + '">Kaydet<\/button>\n                                  <\/div>\n                                <\/div>\n                              <\/div>\n                            <\/div>\n                        ');
-              commentBtn.addEventListener('click', main$renderDashboard$slambda$lambda_2(modalId, this.$db_1, this.userUid12__1));
+              commentBtn.addEventListener('click', main$renderDashboard$slambda$lambda_2(modalId, this.nk_1, this.dl_1));
               btnGroup.appendChild(confirmBtn);
               btnGroup.appendChild(commentBtn);
               diseaseInfo.appendChild(btnGroup);
@@ -557,58 +549,55 @@
             }
 
             cardDiv.appendChild(cardBody);
-            this.$userListDiv_1.appendChild(cardDiv);
-            this.tmp$ret$010__1 = Unit_getInstance();
+            this.pk_1.appendChild(cardDiv);
+            this.bl_1 = Unit_instance;
             if (false) {
-              this.set_state_rjd8d0_k$(5);
+              this.g4_1 = 5;
               continue $sm;
             }
 
-            this.set_state_rjd8d0_k$(8);
+            this.g4_1 = 8;
             continue $sm;
           case 8:
-            this.set_state_rjd8d0_k$(4);
+            this.g4_1 = 4;
             continue $sm;
           case 9:
-            this.set_exceptionState_fex74n_k$(12);
-            this.set_state_rjd8d0_k$(11);
+            this.h4_1 = 12;
+            this.g4_1 = 11;
             continue $sm;
           case 10:
-            this.set_exceptionState_fex74n_k$(12);
-            var e = this.get_exception_x0n6w6_k$();
+            this.h4_1 = 12;
+            var e = this.j4_1;
             console.error('Veri \xE7ekme hatas\u0131:', e);
-            this.$userListDiv_1.textContent = 'Veri \xE7ekilemedi.';
-            this.set_state_rjd8d0_k$(11);
+            this.pk_1.textContent = 'Veri \xE7ekilemedi.';
+            this.g4_1 = 11;
             continue $sm;
           case 11:
-            this.set_exceptionState_fex74n_k$(12);
-            return Unit_getInstance();
+            this.h4_1 = 12;
+            return Unit_instance;
           case 12:
-            throw this.get_exception_x0n6w6_k$();
+            throw this.j4_1;
         }
       } catch ($p) {
         var e_0 = $p;
-        if (this.get_exceptionState_wflpxn_k$() === 12) {
+        if (this.h4_1 === 12) {
           throw e_0;
         } else {
-          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
-          this.set_exception_px07aa_k$(e_0);
+          this.g4_1 = this.h4_1;
+          this.j4_1 = e_0;
         }
       }
      while (true);
   };
-  protoOf(main$renderDashboard$slambda).create_rcuf4x_k$ = function ($this$launch, completion) {
-    var i = new main$renderDashboard$slambda(this.$auth_1, this.$db_1, this.$dermNameH5__1, this.$userListDiv_1, completion);
-    i.$this$launch_1 = $this$launch;
+  protoOf(main$renderDashboard$slambda).dk = function ($this$launch, completion) {
+    var i = new main$renderDashboard$slambda(this.mk_1, this.nk_1, this.ok_1, this.pk_1, completion);
+    i.qk_1 = $this$launch;
     return i;
-  };
-  protoOf(main$renderDashboard$slambda).create_wyq9v6_k$ = function (value, completion) {
-    return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
   };
   function main$renderDashboard$slambda_0($auth, $db, $dermNameH5, $userListDiv, resultContinuation) {
     var i = new main$renderDashboard$slambda($auth, $db, $dermNameH5, $userListDiv, resultContinuation);
     var l = function ($this$launch, $completion) {
-      return i.invoke_d9fzmj_k$($this$launch, $completion);
+      return i.ck($this$launch, $completion);
     };
     l.$arity = 1;
     return l;
@@ -616,42 +605,42 @@
   function main$renderDashboard$lambda(_unused_var__etf5q3) {
     deleteCookie('userAuth');
     window.location.reload();
-    return Unit_getInstance();
+    return Unit_instance;
   }
   function main$renderLogin$lambda$slambda($emailInput, $passwordInput, $auth, $errorMessage, $loginContainer, $dashboardContainer, $dashboardHTML, $navLinks, $db, resultContinuation) {
-    this.$emailInput_1 = $emailInput;
-    this.$passwordInput_1 = $passwordInput;
-    this.$auth_1 = $auth;
-    this.$errorMessage_1 = $errorMessage;
-    this.$loginContainer_1 = $loginContainer;
-    this.$dashboardContainer_1 = $dashboardContainer;
-    this.$dashboardHTML_1 = $dashboardHTML;
-    this.$navLinks_1 = $navLinks;
-    this.$db_1 = $db;
+    this.ml_1 = $emailInput;
+    this.nl_1 = $passwordInput;
+    this.ol_1 = $auth;
+    this.pl_1 = $errorMessage;
+    this.ql_1 = $loginContainer;
+    this.rl_1 = $dashboardContainer;
+    this.sl_1 = $dashboardHTML;
+    this.tl_1 = $navLinks;
+    this.ul_1 = $db;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(main$renderLogin$lambda$slambda).invoke_d9fzmj_k$ = function ($this$launch, $completion) {
-    var tmp = this.create_rcuf4x_k$($this$launch, $completion);
-    tmp.set_result_xj64lm_k$(Unit_getInstance());
-    tmp.set_exception_px07aa_k$(null);
-    return tmp.doResume_5yljmg_k$();
+  protoOf(main$renderLogin$lambda$slambda).ck = function ($this$launch, $completion) {
+    var tmp = this.dk($this$launch, $completion);
+    tmp.i4_1 = Unit_instance;
+    tmp.j4_1 = null;
+    return tmp.o4();
   };
-  protoOf(main$renderLogin$lambda$slambda).invoke_qns8j1_k$ = function (p1, $completion) {
-    return this.invoke_d9fzmj_k$((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+  protoOf(main$renderLogin$lambda$slambda).y4 = function (p1, $completion) {
+    return this.ck((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
-  protoOf(main$renderLogin$lambda$slambda).doResume_5yljmg_k$ = function () {
-    var suspendResult = this.get_result_iyg5d2_k$();
+  protoOf(main$renderLogin$lambda$slambda).o4 = function () {
+    var suspendResult = this.i4_1;
     $sm: do
       try {
-        var tmp = this.get_state_iypx7s_k$();
+        var tmp = this.g4_1;
         switch (tmp) {
           case 0:
-            this.set_exceptionState_fex74n_k$(3);
-            this.set_exceptionState_fex74n_k$(2);
-            this.email0__1 = this.$emailInput_1.value;
-            this.password1__1 = this.$passwordInput_1.value;
-            this.set_state_rjd8d0_k$(1);
-            suspendResult = await_0(signInWithEmailAndPassword(this.$auth_1, this.email0__1, this.password1__1), this);
+            this.h4_1 = 3;
+            this.h4_1 = 2;
+            this.wl_1 = this.ml_1.value;
+            this.xl_1 = this.nl_1.value;
+            this.g4_1 = 1;
+            suspendResult = await_0(signInWithEmailAndPassword(this.ol_1, this.wl_1, this.xl_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -660,47 +649,44 @@
           case 1:
             var result = suspendResult;
             setCookie('userAuth', result.user.uid, 7);
-            main$renderDashboard(this.$loginContainer_1, this.$dashboardContainer_1, this.$dashboardHTML_1, this.$navLinks_1, this.$auth_1, this.$db_1);
-            this.set_exceptionState_fex74n_k$(3);
-            this.set_state_rjd8d0_k$(4);
+            main$renderDashboard(this.ql_1, this.rl_1, this.sl_1, this.tl_1, this.ol_1, this.ul_1);
+            this.h4_1 = 3;
+            this.g4_1 = 4;
             continue $sm;
           case 2:
-            this.set_exceptionState_fex74n_k$(3);
-            var e = this.get_exception_x0n6w6_k$();
-            this.$errorMessage_1.textContent = 'Giri\u015F ba\u015Far\u0131s\u0131z: ' + e.message;
-            this.$errorMessage_1.style.display = 'block';
+            this.h4_1 = 3;
+            var e = this.j4_1;
+            this.pl_1.textContent = 'Giri\u015F ba\u015Far\u0131s\u0131z: ' + e.message;
+            this.pl_1.style.display = 'block';
             console.error('Giri\u015F hatas\u0131:', e);
-            this.set_state_rjd8d0_k$(4);
+            this.g4_1 = 4;
             continue $sm;
           case 3:
-            throw this.get_exception_x0n6w6_k$();
+            throw this.j4_1;
           case 4:
-            this.set_exceptionState_fex74n_k$(3);
-            return Unit_getInstance();
+            this.h4_1 = 3;
+            return Unit_instance;
         }
       } catch ($p) {
         var e_0 = $p;
-        if (this.get_exceptionState_wflpxn_k$() === 3) {
+        if (this.h4_1 === 3) {
           throw e_0;
         } else {
-          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
-          this.set_exception_px07aa_k$(e_0);
+          this.g4_1 = this.h4_1;
+          this.j4_1 = e_0;
         }
       }
      while (true);
   };
-  protoOf(main$renderLogin$lambda$slambda).create_rcuf4x_k$ = function ($this$launch, completion) {
-    var i = new main$renderLogin$lambda$slambda(this.$emailInput_1, this.$passwordInput_1, this.$auth_1, this.$errorMessage_1, this.$loginContainer_1, this.$dashboardContainer_1, this.$dashboardHTML_1, this.$navLinks_1, this.$db_1, completion);
-    i.$this$launch_1 = $this$launch;
+  protoOf(main$renderLogin$lambda$slambda).dk = function ($this$launch, completion) {
+    var i = new main$renderLogin$lambda$slambda(this.ml_1, this.nl_1, this.ol_1, this.pl_1, this.ql_1, this.rl_1, this.sl_1, this.tl_1, this.ul_1, completion);
+    i.vl_1 = $this$launch;
     return i;
-  };
-  protoOf(main$renderLogin$lambda$slambda).create_wyq9v6_k$ = function (value, completion) {
-    return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
   };
   function main$renderLogin$lambda$slambda_0($emailInput, $passwordInput, $auth, $errorMessage, $loginContainer, $dashboardContainer, $dashboardHTML, $navLinks, $db, resultContinuation) {
     var i = new main$renderLogin$lambda$slambda($emailInput, $passwordInput, $auth, $errorMessage, $loginContainer, $dashboardContainer, $dashboardHTML, $navLinks, $db, resultContinuation);
     var l = function ($this$launch, $completion) {
-      return i.invoke_d9fzmj_k$($this$launch, $completion);
+      return i.ck($this$launch, $completion);
     };
     l.$arity = 1;
     return l;
@@ -710,34 +696,34 @@
       event.preventDefault();
       var tmp = MainScope();
       launch(tmp, VOID, VOID, main$renderLogin$lambda$slambda_0($emailInput, $passwordInput, $auth, $errorMessage, $loginContainer, $dashboardContainer, $dashboardHTML, $navLinks, $db, null));
-      return Unit_getInstance();
+      return Unit_instance;
     };
   }
   function $getUserDataCOROUTINE$(db, userUid, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.db_1 = db;
-    this.userUid_1 = userUid;
+    this.bj_1 = db;
+    this.cj_1 = userUid;
   }
-  protoOf($getUserDataCOROUTINE$).doResume_5yljmg_k$ = function () {
-    var suspendResult = this.get_result_iyg5d2_k$();
+  protoOf($getUserDataCOROUTINE$).o4 = function () {
+    var suspendResult = this.i4_1;
     $sm: do
       try {
-        var tmp = this.get_state_iypx7s_k$();
+        var tmp = this.g4_1;
         switch (tmp) {
           case 0:
-            this.set_exceptionState_fex74n_k$(3);
-            this.userDocRef0__1 = doc(this.db_1, 'users', this.userUid_1);
-            this.set_state_rjd8d0_k$(1);
-            suspendResult = await_0(getDoc(this.userDocRef0__1), this);
+            this.h4_1 = 3;
+            this.dj_1 = doc(this.bj_1, 'users', this.cj_1);
+            this.g4_1 = 1;
+            suspendResult = await_0(getDoc(this.dj_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.docSnap1__1 = suspendResult;
+            this.ej_1 = suspendResult;
             var tmp_0 = this;
-            var tmp0_elvis_lhs = this.docSnap1__1.data();
+            var tmp0_elvis_lhs = this.ej_1.data();
             var tmp_1;
             if (tmp0_elvis_lhs == null) {
               tmp_1 = {};
@@ -745,26 +731,26 @@
               tmp_1 = tmp0_elvis_lhs;
             }
 
-            tmp_0.data2__1 = tmp_1;
+            tmp_0.fj_1 = tmp_1;
             var tmp_2 = this;
-            var tmp_3 = this.data2__1.name;
+            var tmp_3 = this.fj_1.name;
             var tmp1_elvis_lhs = (!(tmp_3 == null) ? typeof tmp_3 === 'string' : false) ? tmp_3 : null;
-            tmp_2.name3__1 = tmp1_elvis_lhs == null ? 'NULL' : tmp1_elvis_lhs;
+            tmp_2.gj_1 = tmp1_elvis_lhs == null ? 'NULL' : tmp1_elvis_lhs;
             var tmp_4 = this;
-            var tmp_5 = this.data2__1.surname;
+            var tmp_5 = this.fj_1.surname;
             var tmp2_elvis_lhs = (!(tmp_5 == null) ? typeof tmp_5 === 'string' : false) ? tmp_5 : null;
-            tmp_4.surname4__1 = tmp2_elvis_lhs == null ? 'NULL' : tmp2_elvis_lhs;
+            tmp_4.hj_1 = tmp2_elvis_lhs == null ? 'NULL' : tmp2_elvis_lhs;
             var tmp_6 = this;
-            var tmp_7 = this.data2__1.userType;
+            var tmp_7 = this.fj_1.userType;
             var tmp3_elvis_lhs = (!(tmp_7 == null) ? typeof tmp_7 === 'string' : false) ? tmp_7 : null;
-            tmp_6.usertype5__1 = tmp3_elvis_lhs == null ? 'patient' : tmp3_elvis_lhs;
+            tmp_6.ij_1 = tmp3_elvis_lhs == null ? 'patient' : tmp3_elvis_lhs;
             var tmp_8 = this;
-            var tmp_9 = this.data2__1.date;
+            var tmp_9 = this.fj_1.date;
             var tmp4_elvis_lhs = (!(tmp_9 == null) ? typeof tmp_9 === 'string' : false) ? tmp_9 : null;
-            tmp_8.date6__1 = tmp4_elvis_lhs == null ? '' : tmp4_elvis_lhs;
-            this.diseaseDocRef7__1 = doc(this.db_1, 'userDiseaseData', this.userUid_1);
-            this.set_state_rjd8d0_k$(2);
-            suspendResult = await_0(getDoc(this.diseaseDocRef7__1), this);
+            tmp_8.jj_1 = tmp4_elvis_lhs == null ? '' : tmp4_elvis_lhs;
+            this.kj_1 = doc(this.bj_1, 'userDiseaseData', this.cj_1);
+            this.g4_1 = 2;
+            suspendResult = await_0(getDoc(this.kj_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -813,7 +799,7 @@
               var imgPaths = tmp_18;
               var tmp_19 = diseaseData['user_id'];
               var tmp9_elvis_lhs = (!(tmp_19 == null) ? typeof tmp_19 === 'string' : false) ? tmp_19 : null;
-              var userId = tmp9_elvis_lhs == null ? this.userUid_1 : tmp9_elvis_lhs;
+              var userId = tmp9_elvis_lhs == null ? this.cj_1 : tmp9_elvis_lhs;
               var tmp_20 = diseaseData['isConfirmed'];
               var tmp10_elvis_lhs = (!(tmp_20 == null) ? typeof tmp_20 === 'boolean' : false) ? tmp_20 : null;
               var isConfirmed = tmp10_elvis_lhs == null ? false : tmp10_elvis_lhs;
@@ -849,7 +835,7 @@
                 var tmp_26 = item.prediction3;
                 var tmp3_elvis_lhs_0 = (!(tmp_26 == null) ? typeof tmp_26 === 'string' : false) ? tmp_26 : null;
                 this_1.prediction3 = tmp3_elvis_lhs_0 == null ? '' : tmp3_elvis_lhs_0;
-                destination.add_utx5q5_k$(this_1);
+                destination.p1(this_1);
               }
               this_0.diagnosis = copyToArray(destination);
               this_0.imagePaths = imgPaths;
@@ -863,23 +849,23 @@
 
             var diseases = tmp_10;
             var this_2 = {};
-            this_2.uid = this.userUid_1;
-            this_2.name = this.name3__1;
-            this_2.surname = this.surname4__1;
-            this_2.usertype = this.usertype5__1;
-            this_2.date = this.date6__1;
+            this_2.uid = this.cj_1;
+            this_2.name = this.gj_1;
+            this_2.surname = this.hj_1;
+            this_2.usertype = this.ij_1;
+            this_2.date = this.jj_1;
             this_2.diseases = diseases;
             return this_2;
           case 3:
-            throw this.get_exception_x0n6w6_k$();
+            throw this.j4_1;
         }
       } catch ($p) {
         var e = $p;
-        if (this.get_exceptionState_wflpxn_k$() === 3) {
+        if (this.h4_1 === 3) {
           throw e;
         } else {
-          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
-          this.set_exception_px07aa_k$(e);
+          this.g4_1 = this.h4_1;
+          this.j4_1 = e;
         }
       }
      while (true);
@@ -887,9 +873,6 @@
   function mainWrapper() {
     main();
   }
-  //region block: init
-  USER_AUTH_COOKIE = 'userAuth';
-  //endregion
   mainWrapper();
   return _;
 }));
