@@ -1,11 +1,11 @@
-(function (root, factory) {
+(function (factory) {
   if (typeof define === 'function' && define.amd)
     define(['exports'], factory);
   else if (typeof exports === 'object')
     factory(module.exports);
   else
-    root['kotlin-kotlinx-atomicfu-runtime-js-ir'] = factory(typeof this['kotlin-kotlinx-atomicfu-runtime-js-ir'] === 'undefined' ? {} : this['kotlin-kotlinx-atomicfu-runtime-js-ir']);
-}(this, function (_) {
+    globalThis['kotlin-kotlinx-atomicfu-runtime-js-ir'] = factory(typeof globalThis['kotlin-kotlinx-atomicfu-runtime-js-ir'] === 'undefined' ? {} : globalThis['kotlin-kotlinx-atomicfu-runtime-js-ir']);
+}(function (_) {
   'use strict';
   //region block: pre-declaration
   //endregion

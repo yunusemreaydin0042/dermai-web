@@ -1,5 +1,5 @@
 let config = {
-  mode: 'development',
+  mode: 'production',
   resolve: {
     modules: [
       "node_modules"
@@ -26,32 +26,18 @@ config.output = {
     clean: true,
     globalObject: "globalThis"
 };
+config.output.path = require('path').resolve(__dirname, "../../../kotlin-webpack/js/productionExecutable")
 // source maps
 config.module.rules.push({
         test: /\.m?js$/,
         use: ["source-map-loader"],
         enforce: "pre"
 });
-config.devtool = 'eval-source-map';
+config.devtool = 'source-map';
 config.ignoreWarnings = [
     /Failed to parse source map/,
     /Accessing import\.meta directly is unsupported \(only property access or destructuring is supported\)/
 ]
-
-// dev server
-config.devServer = {
-  "open": true,
-  "static": [
-    "kotlin",
-    "../../../processedResources/js/main"
-  ],
-  "client": {
-    "overlay": {
-      "errors": true,
-      "warnings": false
-    }
-  }
-};
 
 // KotlinWebpackCssRule[css]
 ;(function(config) {
