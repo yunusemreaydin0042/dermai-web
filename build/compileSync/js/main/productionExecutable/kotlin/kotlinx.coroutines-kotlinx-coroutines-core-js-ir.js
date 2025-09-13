@@ -83,8 +83,8 @@
   var CancellationException_init_$Init$ = kotlin_kotlin.$_$.h;
   var getStringHashCode = kotlin_kotlin.$_$.h2;
   var removeFirstOrNull = kotlin_kotlin.$_$.j1;
-  var Collection = kotlin_kotlin.$_$.b1;
   var KtList = kotlin_kotlin.$_$.c1;
+  var Collection = kotlin_kotlin.$_$.b1;
   var HashSet_init_$Create$ = kotlin_kotlin.$_$.e;
   var RuntimeException_init_$Init$_0 = kotlin_kotlin.$_$.n;
   var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.f;
@@ -162,7 +162,7 @@
   initMetadataForClass(SetTimeoutBasedDispatcher, 'SetTimeoutBasedDispatcher', VOID, CoroutineDispatcher, VOID, [1]);
   initMetadataForObject(NodeDispatcher, 'NodeDispatcher', VOID, SetTimeoutBasedDispatcher, VOID, [1]);
   initMetadataForObject(SetTimeoutDispatcher, 'SetTimeoutDispatcher', VOID, SetTimeoutBasedDispatcher, VOID, [1]);
-  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [Collection, KtList]);
+  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [KtList, Collection]);
   initMetadataForClass(ScheduledMessageQueue, 'ScheduledMessageQueue', VOID, MessageQueue);
   initMetadataForClass(WindowDispatcher, 'WindowDispatcher', VOID, CoroutineDispatcher, VOID, [1]);
   initMetadataForClass(WindowMessageQueue, 'WindowMessageQueue', VOID, MessageQueue);

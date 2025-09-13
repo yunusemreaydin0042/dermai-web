@@ -113,7 +113,7 @@ fun main() {
             <div class="col-md-3">
                 <div class="card mb-3">
                     <div id="dermdiv" class="card-body text-center">
-                        <img src="user.svg" alt="user"/>
+                        <img src="icon.webp" alt="user" height="230px"/>
                         <h5 id="derm-name">Yükleniyor...</h5>
                         <p>Dermatolog</p>
                     </div>
@@ -142,6 +142,11 @@ fun main() {
         .date-text { font-size: 0.9rem; font-weight: bold; color: #6c757d; margin: 0; }
         .time-text { font-size: 0.8rem; color: #6c757d; margin: 0; }
         .disease-card { position: relative; }
+        .btn-group {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
 
         /* Navbar ve Footer rengini özelleştir */
         .navbar, footer {
@@ -163,12 +168,28 @@ fun main() {
         .dermai-color{
            background: linear-gradient(to left, #4CAF50, #2196F3, #9C27B0);
         }
+        #confirm{
+            background: #4CAF50;
+        }
+        .navbar,.container-fluid{
+            padding: 0px;
+            margin: 0px;
+        }
+        #comment{
+            background: #2196F3;
+        }
+        .dermai-btn-1{
+            background: #9C27B0;
+        }
+        .dermbtn{
+            border-radius: 10px;
+            color: #FFFFFF;
+        }
     </style>
     <div id="page-wrapper">
         <nav class="navbar navbar-expand-lg navbar-dark dermai-color">
             <div class="container-fluid">
-                <img src="logo.svg" alt="dermai" height="80px" />
-                <a class="navbar-brand" href="#"><img src="dermai.svg" alt="dermai" height="40px"/></a>
+                <img src="full_icon.png" alt="dermai" height="60px"  style="margin:10px;border-radius: 15px;" />
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -197,7 +218,7 @@ fun main() {
         dashboardContainer.innerHTML = dashboardHTML
         loginContainer.style.display = "none"
         dashboardContainer.style.display = "block"
-        navLinks.innerHTML = """<li><button  id="logoutBtn" class="nav-link"><img src="exit.svg" height="55px"/></button></li>"""
+        navLinks.innerHTML = """<li><button  id="logoutBtn" class="nav-link"><img src="exit.svg" height="45px" style="color: white;"/></button></li>"""
 
         val dermNameH5 = document.getElementById("derm-name") as HTMLElement
         val userListDiv = document.getElementById("user-list") as HTMLElement
@@ -316,13 +337,13 @@ fun main() {
                         diseaseInfo.appendChild(confPara)
 
                         val btnGroup = document.createElement("div")
-                        btnGroup.setAttribute("class", "d-flex gap-2 mb-3")
+                        btnGroup.setAttribute("class", "d-flex gap-2 mb-3 btn-group")
 
                         val confirmBtn = document.createElement("button")
-                        confirmBtn.setAttribute("class", "btn dermai-color btn-sm")
+                        confirmBtn.setAttribute("class", "btn btn-sm dermbtn")
+                        confirmBtn.setAttribute("id","confirm")
                         confirmBtn.textContent = if (disease.isConfirmed) "Onaylandı" else "Onayla"
                         if (disease.isConfirmed) confirmBtn.setAttribute("disabled", "true")
-
                         confirmBtn.addEventListener("click", { _: Event ->
                             val diseaseRef = doc(db, "userDiseaseData", userUid)
                             val promise: Promise<Unit> = updateDoc(diseaseRef, json("isConfirmed" to true))
@@ -334,8 +355,9 @@ fun main() {
                         })
 
                         val commentBtn = document.createElement("button")
-                        commentBtn.setAttribute("class", "btn dermai-color btn-sm")
+                        commentBtn.setAttribute("class", "btn btn-sm dermbtn")
                         commentBtn.textContent = "Yorum Ekle"
+                        commentBtn.setAttribute("id","comment")
 
                         val modalId = "commentModal-${userUid}-${index}"
                         document.body!!.insertAdjacentHTML("beforeend", """
@@ -351,13 +373,12 @@ fun main() {
                                   </div>
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-light" data-bs-dismiss="modal">İptal</button>
-                                    <button type="button" class="btn dermai-color" id="saveCommentBtn-$modalId">Kaydet</button>
+                                    <button type="button" class="btn dermai-btn-1" id="saveCommentBtn-$modalId">Kaydet</button>
                                   </div>
                                 </div>
                               </div>
                             </div>
                         """)
-
                         commentBtn.addEventListener("click", { _: Event ->
                             val modalEl = document.getElementById(modalId)!!
                             val modal = js("new bootstrap.Modal(modalEl)")
